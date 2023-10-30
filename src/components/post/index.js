@@ -23,7 +23,7 @@ const PostDetails = () => {
     }, [])
 
     return (
-        <Section red>
+        <Section blue>
             <Link to='/'>Voltar para os posts</Link>
             <div>
                 <Img src={post.image} alt={post.title} />
