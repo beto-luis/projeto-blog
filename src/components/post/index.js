@@ -23,7 +23,7 @@ const PostDetails = () => {
     }, [])
 
     return (
-        <Section>
+        <Section orange>
             <Link to='/'>Voltar para os posts</Link>
             <div>
                 <Img src={post.image} alt={post.title} />
@@ -36,8 +36,8 @@ const PostDetails = () => {
 
 const Section = styled.section`
     background-color: blue;
-    ${props => props.red && css `
-        background-color: red;
+    ${props => props.orange && css `
+        background-color: orange;
     `}
     padding: 50px;
 `
